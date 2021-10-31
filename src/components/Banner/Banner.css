@@ -1,0 +1,9 @@
+.banner{
+    background-image: url(/src/components/image/Travel.jpg);
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    text-align: center;
+}

@@ -14,6 +14,9 @@ import Login from './components/Login/Login';
 import Services from './components/Services/Services';
 import PackageId from './components/PackageId/PackageId';
 import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/Banner';
+import Tips from './components/Tips/Tips';
+import New from './components/New/New';
 
 function App() {
   return (
@@ -25,11 +28,17 @@ function App() {
           <Switch>
             <Route exact path="/" >
               <Home></Home>
+              <Banner></Banner>
               <Services></Services>
+              <Tips></Tips>
+              <New></New>
             </Route>
             <Route path="/home">
               <Home></Home>
+              <Banner></Banner>
               <Services></Services>
+              <Tips></Tips>
+              <New></New>
             </Route>
             <Route path="/packages">
               <Services></Services>
