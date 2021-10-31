@@ -23,7 +23,7 @@ const New = () => {
                     </ul>
                 </div>
             </div>
-            <h4 className="text-success text-center">Soon We will let you know about our packages!</h4>
+            <h4 className="text-success text-center">Soon we will let you know about our packages!</h4>
         </div>
     );
 };
