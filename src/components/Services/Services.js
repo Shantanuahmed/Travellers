@@ -3,7 +3,7 @@ import Packages from '../Packages/Packages'
 const Services = () => {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5001/packages')
+        fetch('https://dreadful-warlock-04090.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])

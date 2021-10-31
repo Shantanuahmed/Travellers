@@ -6,7 +6,7 @@ const MyBookings = () => {
     const { user } = useAuth();
     const [bookings, setBookings] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5001/orders')
+        fetch('https://dreadful-warlock-04090.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])
@@ -18,7 +18,7 @@ const MyBookings = () => {
                         return <MyOrder booking={booking} key={booking._id}></MyOrder>
                     }
                     else {
-                        <h2>you have no bookings yet</h2>
+                        return <h2 className="text-center text-danger">You have no bookings yet</h2>
                     }
                 })
             }

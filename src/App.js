@@ -17,7 +17,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid background">
 
       <AuthProvider>
         <BrowserRouter>

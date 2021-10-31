@@ -34,11 +34,11 @@ const PackageId = () => {
     }
 
     return (
-        <div className="m-5">
+        <div className="m-1">
             <CardGroup>
                 <Card className="text-center">
                     <div>
-                        <Card.Img variant="top" src={packages.picture} className="w-75" height="300px" />
+                        <Card.Img variant="top" src={packages.picture} className="w-75" />
                     </div>
                     <Card.Body>
                         <Card.Title>{packages.packages}</Card.Title>
@@ -58,7 +58,7 @@ const PackageId = () => {
 
                 </Card>
             </CardGroup>
-            <Accordion defaultActiveKey="0" className="text-center">
+            <Accordion defaultActiveKey="0" className="container">
                 <Accordion.Item eventKey="0" >
                     <Accordion.Header className="me-4 text-center">Click here to book your trip with Travellers</Accordion.Header>
                     <Accordion.Body>

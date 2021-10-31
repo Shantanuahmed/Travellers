@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 const MyOrder = (props) => {
 
     const { email, city, address, Package_id, name, phone, _id } = props.booking;
-    const [orders, setOrders] = useState([]);
+
     const handleDelete = id => {
-        const url = `http://localhost:5001/orders/${id}`
+        const url = `https://dreadful-warlock-04090.herokuapp.com/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })
