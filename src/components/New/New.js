@@ -2,7 +2,7 @@ import React from 'react';
 
 const New = () => {
     return (
-        <div className="mt-5">
+        <div className="mt-5 container">
             <h1 className="text-center fw-bold text-info">Good News</h1>
             <h5 className="text-center">We are happy to announce that we are going to launch foreign trip packages from 1 January 2022. We will be covering below countries</h5>
             <div className="row text-center">
