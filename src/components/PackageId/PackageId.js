@@ -11,13 +11,13 @@ const PackageId = () => {
     const { packageId } = useParams();
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5001/packages/${packageId}`
+        const url = `https://dreadful-warlock-04090.herokuapp.com/packages/${packageId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])
     const onSubmit = data => {
-        fetch('http://localhost:5001/orders', {
+        fetch('https://dreadful-warlock-04090.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

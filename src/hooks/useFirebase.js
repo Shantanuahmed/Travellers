@@ -11,17 +11,21 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
     // Google registration and login
     const signInUsingGoogle = () => {
+
         return signInWithPopup(auth, googleProvider)
             .finally(() => { setLoading(false) });
     }
 
     const logOut = () => {
+        setLoading(true)
         signOut(auth)
             .then(() => {
-
-            });
+                setUser({})
+            })
+            .finally(() => setLoading(false))
     };
 
+    // observer
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, user => {
             if (user) {
@@ -30,13 +34,14 @@ const useFirebase = () => {
             else {
                 setUser({});
             }
+            setLoading(false);
         });
         return () => unsubscribed;
     }, [])
 
 
     return {
-        signInUsingGoogle, user, logOut
+        signInUsingGoogle, user, logOut, loading
     }
 
 

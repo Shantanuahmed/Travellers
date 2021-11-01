@@ -26,7 +26,7 @@ const Packages = (props) => {
                             <p>Any queries: {queries}</p>
                         </Card.Text>
                     </Card.Body>
-                    <Link to={`/services/${_id}`}><button>Click for more</button></Link>
+                    <Link to={`/packages/${_id}`}><button>Click for more</button></Link>
                 </Card>
             </CardGroup>
         </div>

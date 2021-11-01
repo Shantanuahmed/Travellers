@@ -40,12 +40,12 @@ function App() {
               <Tips></Tips>
               <New></New>
             </Route>
-            <Route path="/packages">
+            <Route path="/services">
               <Services></Services>
             </Route>
-            <Route exact path="/services/:packageId">
+            <PrivateRoute path="/packages/:packageId">
               <PackageId></PackageId>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
